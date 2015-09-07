@@ -1,0 +1,19 @@
+{
+  "name": "french-gaming",
+  "version": "1.0.0",
+  "description": "WebApp French Gaming",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p-guerin/french-gaming.git"
+  },
+  "author": "GUERIN Pierre <guerin.pierre26@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p-guerin/french-gaming/issues"
+  },
+  "homepage": "https://github.com/p-guerin/french-gaming"
+}
