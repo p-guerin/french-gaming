@@ -2,7 +2,7 @@
   "name": "french-gaming",
   "version": "1.0.0",
   "description": "WebApp French Gaming",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/p-guerin/french-gaming/issues"
   },
-  "homepage": "https://github.com/p-guerin/french-gaming"
+  "homepage": "https://github.com/p-guerin/french-gaming",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  }
 }
