@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+i {
+    padding-right: 2.5%;
+}
+
+/*Navigation*/
+.navigation {
+  display: block;
+  position: fixed;
+  float: left;
+  width: 100%;
+  height: 10%;
+  background: rgba(0,0,0,1);
+  z-index: 9999;
+}
+.nav-logo {
+  display: block;
+  float: left;
+  width: calc(100% / 10);
+  margin-left: 10%;
+  background: rgba(0,0,0,1);
+}
+.nav-logo svg {
+  display: block;
+  float: left;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  fill: rgba(255,255,255,1);
+}
+.nav-left, .nav-right {
+  display: flex;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+.nav-left {
+  width: 40%;
+}
+.nav-right {
+  width: 20%;
+  margin: 0 10%;
+}
+.navl-links, .navr-links {
+  display: block;
+  float: left;
+  height: 100%;
+}
+.navl-links {
+  width: 20%;
+}
+.navr-links {
+  width: 50%;  
+}
+.link {
+  display: flex;
+  float: left;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+.btn-link {
+  display: flex;
+  float: left;
+  width: 90%;
+  height: 50%;
+  margin: 12.74% 5%;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+
+/*Carousel*/
+.carousel {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slick-list, .slick-track, .test1, .test2, .test3 {
+  height: 100%;
+}
+.test1, .test2, .test3 {
+  background-size: cover;
+}
+.test1 {
+  background: url(../images/carousel/1.jpg);
+}
+.test2 {
+  background: url(../images/carousel/2.jpg);
+}
+.test3 {
+  background: url(../images/carousel/3.jpg);
+}
+
+.slick-active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../images/carousel/pattern-black.png);
+}
+
+/*Home Page */
+.home {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
