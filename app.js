@@ -13,6 +13,10 @@ app.use('/public', express.static('public'));
 
 // Routes
 app.get('/', routes.home);
+app.get('/news', routes.news);
+app.get('/team', routes.team);
+app.get('/forum', routes.forum);
+app.get('/gallery', routes.gallery);
 
 // Server
 app.listen(port);
