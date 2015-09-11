@@ -23,19 +23,23 @@
 <div class="col-left">
   <section class="news">
     <div class="section-title">News</div>
-      <% for (var i = 0; i < news.length(); i++) { %>
-        <div class="news-card">
-          <div class="card-image">
-            <img src="/public/images/news/thumb/<% news[i].image %>" alt="news[i].image_alt"/>
+      <% if(news.length > 0) {%>
+        <% for (var i = 0; i < news.length; i++) { %>
+          <div class="news-card">
+            <div class="card-image">
+              <img src="/public/images/news/thumb/<% news[i].image %>" alt="news[i].image_alt"/>
+            </div>
+            <div class="card-title">
+              <% news[i].title %>
+            </div>
+            <div class="card-desc">
+              <% news[i].description %>
+            </div>
+            <a href="<% news[i].link %>" class="card-link"> Lire la suite ...</a>
           </div>
-          <div class="card-title">
-            <% news[i].title %>
-          </div>
-          <div class="card-desc">
-            <% news[i].description %>
-          </div>
-          <a href="<% news[i].link %>" class="card-link"> Lire la suite ...</a>
-        </div>
+        <% } %>
+      <% }else{ %>
+        <div class="no-news">Aucune News.</div>
       <% } %>
   </section>
   

@@ -1,5 +1,6 @@
 exports.home = function(req,res){
-  res.render('home', {title:'Accueil'});
+  var news = [];
+  res.render('home', {title:'Accueil', news:news});
   console.log('Home Page!');
 }
 exports.news = function(req,res){
