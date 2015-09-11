@@ -1,9 +1,16 @@
-$(document).ready(function() {
-  var w = $(document).width();
-  var h = $(document).height();
+$("#container").scroll(function() {
+  if ($("#container").scrollTop() > 0) {
+    $(".nav-logo").css({"height": "100%"});
+  } else {
+    $(".nav-logo").css({"height": "auto"});
+  }
+});
 
-  $(".nav-logo").css({
-    "width": w/10,
-    "height": w/10
+$(function() {
+  var queryurl = window.location.href.substr(window.location.href.lastIndexOf("/"));
+  $(".link").each(function(){
+    if($(this).attr("href") == queryurl || $(this).attr("href") == '' ){
+      $(this).addClass("active");
+    }
   });
 });
