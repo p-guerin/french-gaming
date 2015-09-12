@@ -283,3 +283,33 @@ html, body {
   animation: scroll 1.125s linear 0s infinite;
   z-index: 1;
 }
+
+.col-left {
+  display: block;
+  float: left;
+  width: 66%;
+}
+.news {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.section-title {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.news-card {
+  display: block;
+  float: left;
+  width: 45%;
+  margin: 0 2.5%;
+}
+.card-image, .card-title, .card-desc, .card-link {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.card-image img {
+  width: 100%;
+}

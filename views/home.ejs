@@ -27,15 +27,15 @@
         <% for (var i = 0; i < news.length; i++) { %>
           <div class="news-card">
             <div class="card-image">
-              <img src="/public/images/news/thumb/<% news[i].image %>" alt="news[i].image_alt"/>
+              <img src="/public/images/carousel/<%= news[i].image %>" title="<%= news[i].image_alt %>" alt="<%= news[i].image_alt %>"/>
             </div>
             <div class="card-title">
-              <% news[i].title %>
+              <%= news[i].title %>
             </div>
             <div class="card-desc">
-              <% news[i].description %>
+              <%= news[i].description %>
             </div>
-            <a href="<% news[i].link %>" class="card-link"> Lire la suite ...</a>
+            <a href="<%= news[i].link %>" class="card-link"> Lire la suite ...</a>
           </div>
         <% } %>
       <% }else{ %>
@@ -45,6 +45,9 @@
   
 
 </div>
+<form action="/" method="post">
+  <input type="submit">
+</form>
 <h1>Accueil</h1>
 
 
